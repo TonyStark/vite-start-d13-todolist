@@ -18,7 +18,7 @@ function TodolistLogic() {
         }else{
           const updt=arr.map((el)=>{
             if(el.id == editId){
-              return {...el,...task}
+              return {...el,task:task}
             }
             return el;
           })
